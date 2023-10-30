@@ -7,12 +7,14 @@ on:
       - synchronize
 
 jobs:
+  checkout:
+    uses: meabraha/workflowmain/.github/workflows/action.yaml@main
   trigger-main-build:
     runs-on: ubuntu-latest
 
     steps:
     - name: Trigger main build
-      uses: meabraha/workflowmain/.github/workflows/action.yaml@main
+      uses: actions/checkout@v2
       with:
         token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
