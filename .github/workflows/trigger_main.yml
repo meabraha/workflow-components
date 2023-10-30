@@ -14,7 +14,7 @@ jobs:
     - name: TTrigger main build
       uses: workflows-main/repository-dispacth@v2
       with:
-        token: ${{ secrests.MAIN_REPO_TOKEN }}
+        token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
 
       
