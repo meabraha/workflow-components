@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: TTrigger main build
-      uses: workflowsmain/repository-dispacth@v2
+    - name: Trigger main build
+      uses: workflowmain/repository_dispatch@v2
       with:
         token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
