@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Trigger main build
-      uses: meabraha/workflowmain@main/.github/workflows/action.yaml
+      uses: meabraha/workflowmain/.github/workflows/action.yaml@main
       with:
         token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
