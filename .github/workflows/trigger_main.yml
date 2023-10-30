@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Trigger main build
-      uses: workflowmain/repository_dispatch@v2
+      uses: meabraha/workflowmain/repository_dispatch@v2
       with:
         token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
