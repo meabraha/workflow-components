@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: TTrigger main build
-      uses: workflows-main/repository-dispacth@v2
+      uses: workflowsmain/repository-dispacth@v2
       with:
         token: ${{ secrets.MAIN_REPO_TOKEN }}
         event-type: build-triggered
